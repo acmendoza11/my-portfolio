@@ -8,13 +8,13 @@ function Portfolio() {
     <FullPage>
       <FullpageNavigation />
       <FullPageSections>
-        <FullpageSection className="sections">
+        <FullpageSection>
           <h1>Screen 1</h1>
         </FullpageSection>
-        <FullpageSection className="sections">
+        <FullpageSection>
           <h1>Screen 2</h1>
         </FullpageSection>
-        <FullpageSection className="sections">
+        <FullpageSection>
           <h1>Screen 3</h1>
         </FullpageSection>
       </FullPageSections>
