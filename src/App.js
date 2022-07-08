@@ -1,12 +1,8 @@
-
-import './App.css';
-import Introduction from './components/introduction/Introduction';
+import Portfolio from '../src/components/Portfolio.js';
 
 function App() {
   return (
-    <div className="App">
-      <Introduction />
-    </div>
+    <Portfolio />
   );
 }
 
