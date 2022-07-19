@@ -1,24 +1,27 @@
 import React from 'react'
-import FullPage, {FullPageSections, FullpageSection, FullpageNavigation} from '@ap.cx/react-fullpage'
+import { Container } from 'react-bootstrap'
 import '../styles/Portfolio.css'
+import NavigationBar from './NavigationBar'
+import Experience from './Experience'
+import Skills from './Skills'
+import Home from './Home'
+import Contact from './Contact'
 
 function Portfolio() {
 
   return (
-    <FullPage>
-      <FullpageNavigation />
-      <FullPageSections>
-        <FullpageSection>
-          <h1>Screen 1</h1>
-        </FullpageSection>
-        <FullpageSection>
-          <h1>Screen 2</h1>
-        </FullpageSection>
-        <FullpageSection>
-          <h1>Screen 3</h1>
-        </FullpageSection>
-      </FullPageSections>
-    </FullPage>
+      <div className='main'>
+        <NavigationBar />
+        <Home />
+        <Skills />
+        <Experience />
+        <Contact />
+      </div>
+    
+    
+  
+  
+    
   )
 }
 

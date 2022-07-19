@@ -1,0 +1,127 @@
+
+.header {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background: #252525;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.header .nav-menu a {
+    color: #ffffff;
+}
+
+.header .navbar img {
+    width: 250px;
+    height: auto;
+}
+
+.header .nav-menu {
+    display: flex;
+}
+
+.header .nav-item {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.header .nav-item a:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #FF0000;
+}
+
+.hamburger {
+    display: none;
+
+}
+
+
+@media screen and (max-width:940px) {
+    .header {
+        max-width: 100%;
+        background: #252525;
+    }
+
+    .header .navbar {
+        max-width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 90px;
+        flex-direction: column;
+        background: #252525;
+        width: 100%;
+        height: 90vh;
+        z-index: 3;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .header .navbar img {
+        width: 150px;
+    }
+}
+
+ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration:none !important;
+    
+  }
+  
+  .button {
+    padding: 17px 28px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+  }
+  
+  .line {
+    display: block;
+    width: 40px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--primary-color);
+  }
+  
